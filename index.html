@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HC Decor</title>
-  <link rel="stylesheet" href="style.css">
+  <title>HC Decor | Premium Home Essentials</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
 <header>
-  <h1>HC DECOR</h1>
+  <div class="logo">HC DECOR</div>
   <nav>
-    <a href="#">Home</a>
     <a href="#categories">Shop</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Premium Home Decor Essentials</h2>
-  <p>Doormats • Table Mats • Table Covers • Curtains</p>
+  <div class="hero-content">
+    <h1>Premium Home Essentials for Modern Living</h1>
+    <p>Elegant • Functional • Everyday Comfort</p>
+    <a href="#categories" class="btn">Explore Collection</a>
+  </div>
 </section>
 
-<section id="categories">
-  <h2>Categories</h2>
+<section id="categories" class="section">
+  <h2>Shop by Category</h2>
 
   <div class="grid">
     <div class="card">Doormats</div>
@@ -34,18 +38,53 @@
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
+<section id="products" class="section">
+  <h2>Featured Products</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Premium Doormat</h3>
+      <p>Anti-slip • Easy clean</p>
+    </div>
+
+    <div class="card">
+      <h3>Table Mat Set</h3>
+      <p>Heat resistant • Stylish</p>
+    </div>
+
+    <div class="card">
+      <h3>Table Cover</h3>
+      <p>Waterproof • Durable</p>
+    </div>
+
+    <div class="card">
+      <h3>PVC Curtain</h3>
+      <p>Transparent • Heavy duty</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>About HC Decor</h2>
+  <p>
+    HC Decor brings thoughtfully designed home essentials that combine comfort, durability,
+    and modern aesthetics for everyday living.
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Get in Touch</h2>
+
   <form>
-    <input placeholder="Name" />
-    <input placeholder="Phone" />
-    <textarea placeholder="Message"></textarea>
-    <button type="submit">Send</button>
+    <input type="text" placeholder="Your Name" required />
+    <input type="text" placeholder="Phone Number" required />
+    <textarea placeholder="Your Requirement"></textarea>
+    <button type="submit">Send Inquiry</button>
   </form>
 </section>
 
 <footer>
-  <p>© 2026 HC Decor</p>
+  <p>© 2026 HC Decor. All rights reserved.</p>
 </footer>
 
 </body>
