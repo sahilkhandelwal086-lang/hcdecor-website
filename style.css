@@ -118,3 +118,15 @@ footer {
   margin-top: 40px;
   text-align: center;
 }
+
+.hero {
+  background: linear-gradient(to right, #f7f7f7, #ffffff);
+}
+
+.card {
+  border-radius: 12px;
+}
+
+button {
+  margin-top: 10px;
+}
