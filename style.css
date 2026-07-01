@@ -265,5 +265,10 @@ button:hover {
 .testimonials-section .card p:first-child {
   color: #f5b301;
   font-size: 14px;
-  margin: 0 0 6px 0;
+  margin-bottom: 6px;
+}
+
+.testimonials-section .card p:nth-child(2) {
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
