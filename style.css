@@ -228,7 +228,7 @@ button:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.45);
   z-index: 1;
 }
 
@@ -257,7 +257,7 @@ button:hover {
   padding: 12px;
   border-radius: 10px;
 
-  background: rgba(255, 255, 255, 0.75); /* more transparent */
+  background: rgba(255, 255, 255, 0.85); /* more transparent */
   backdrop-filter: blur(6px); /* premium glass effect */
 
   box-shadow: 0 3px 10px rgba(0,0,0,0.12);
