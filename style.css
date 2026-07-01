@@ -221,42 +221,34 @@ button:hover {
   background-repeat: no-repeat;
   padding: 80px 20px;
   overflow: hidden;
-  color: #1f1f1f;
 }
 
-/* Dark overlay on background image */
+/* DARK OVERLAY (controls readability) */
 .testimonials-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   z-index: 1;
 }
 
-/* Ensure content is above overlay */
-.testimonials-section h2 {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  margin-bottom: 30px;
-}
-
+/* CONTENT MUST ALWAYS BE ABOVE OVERLAY */
+.testimonials-section h2,
 .testimonials-section .grid {
   position: relative;
   z-index: 2;
 }
 
-/* Card styling */
+/* CARD STYLE */
 .testimonials-section .card {
-  background: rgba(255,255,255,0.95);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
-/* Stars styling */
+/* STAR COLOR */
 .testimonials-section .card p:first-child {
   color: #f5b301;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-weight: bold;
 }
