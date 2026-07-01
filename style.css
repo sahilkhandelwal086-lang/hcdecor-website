@@ -274,3 +274,12 @@ button:hover {
   margin-bottom: 10px;
   line-height: 1.4;
 }
+
+.testimonials-section .card {
+  transition: all 0.25s ease;
+}
+
+.testimonials-section .card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.9);
+}
