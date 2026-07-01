@@ -244,12 +244,11 @@ button:hover {
 
 /* FORCE compact grid */
 .testimonials-section .grid {
-  position: relative;
-  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+
+  gap: 22px; /* increased spacing */
 }
 
 /* compact cards */
@@ -257,7 +256,10 @@ button:hover {
   width: 220px;
   padding: 12px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.95);
+
+  background: rgba(255, 255, 255, 0.75); /* more transparent */
+  backdrop-filter: blur(6px); /* premium glass effect */
+
   box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
