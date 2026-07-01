@@ -38,26 +38,58 @@ nav a {
 
 /* HERO */
 .hero {
-  min-height: 70vh;
+  min-height: 75vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(to right, #f7f7f7, #ffffff);
+
   padding: 60px 20px;
+  background: linear-gradient(to right, #f7f7f7, #ffffff);
+}
+
+.hero-content {
+  max-width: 700px;
 }
 
 .hero h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  color: #666;
+  font-size: 42px;
   margin-bottom: 15px;
+  line-height: 1.2;
 }
 
+.hero .subtext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  margin: 10px 0 15px;
+  padding: 14px 22px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero .micro {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* TRUST STRIP */
+.trust {
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #444;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
 /* BUTTON */
 button {
   margin-top: 10px;
