@@ -219,36 +219,51 @@ button:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 80px 20px;
+  padding: 60px 20px;
   overflow: hidden;
 }
 
-/* DARK OVERLAY (controls readability) */
+/* Overlay */
 .testimonials-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0,0,0,0.6);
   z-index: 1;
 }
 
-/* CONTENT MUST ALWAYS BE ABOVE OVERLAY */
-.testimonials-section h2,
+/* Heading */
+.testimonials-section h2 {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Grid - more compact layout */
 .testimonials-section .grid {
   position: relative;
   z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  justify-items: center;
 }
 
-/* CARD STYLE */
+/* Smaller testimonial cards */
 .testimonials-section .card {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  width: 100%;
+  max-width: 280px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
-/* STAR COLOR */
+/* Star styling */
 .testimonials-section .card p:first-child {
   color: #f5b301;
-  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
