@@ -5,35 +5,27 @@
 }
 
 body{
-  font-family: Arial, sans-serif;
+  font-family:Arial;
   background:#fff;
   color:#1f1f1f;
-  line-height:1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
-.header{
-  position:fixed;
-  top:0;
-  width:100%;
-  z-index:1000;
+/* HEADER */
+header{
   display:flex;
   justify-content:space-between;
-  align-items:center;
   padding:18px 40px;
-  background:rgba(255,255,255,0.92);
-  backdrop-filter:blur(8px);
   border-bottom:1px solid #eee;
+  position:sticky;
+  top:0;
+  background:white;
+  z-index:1000;
 }
 
-/* =========================
-   HERO (PREMIUM LOOK RESTORED)
-========================= */
+/* HERO */
 .hero{
   position:relative;
-  height:100vh;
+  height:85vh;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -52,164 +44,105 @@ body{
 .hero-overlay{
   position:absolute;
   inset:0;
-  background:linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.35),
-    rgba(0,0,0,0.55)
-  );
+  background:rgba(0,0,0,0.4);
 }
 
 .hero-content{
   position:relative;
   color:#fff;
-  max-width:900px;
+  max-width:800px;
   padding:20px;
 }
 
-.hero h1{
-  font-size:58px;
-  line-height:1.1;
-  margin-bottom:18px;
-  letter-spacing:-0.5px;
+.hero-content h1{
+  font-size:54px;
+  margin-bottom:15px;
 }
 
-.hero p{
-  font-size:20px;
+.hero-subtitle{
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+.hero-trust{
+  margin-top:15px;
+  font-size:14px;
   opacity:0.9;
-  margin-bottom:22px;
 }
 
-.cta{
-  display:inline-block;
-  padding:14px 28px;
-  background:#fff;
-  color:#000;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.cta:hover{
-  transform:scale(1.05);
-}
-
-/* =========================
-   SECTIONS (MORE AIRY = PREMIUM)
-========================= */
+/* SECTIONS */
 .section{
-  padding:100px 20px;
+  padding:80px 20px;
   text-align:center;
 }
 
 .section h2{
-  font-size:36px;
-  margin-bottom:50px;
-  letter-spacing:-0.3px;
+  font-size:28px;
+  margin-bottom:30px;
 }
 
-/* =========================
-   GRID (LESS BOXED FEEL)
-========================= */
+/* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:32px;
-  max-width:1150px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+  max-width:1100px;
   margin:auto;
 }
 
-/* =========================
-   CARDS (LIGHT PREMIUM STYLE)
-========================= */
+/* CARD */
 .card{
   background:#fff;
-  border:1px solid rgba(0,0,0,0.06);
-  border-radius:18px;
-  padding:22px;
+  border:1px solid #eee;
+  border-radius:16px;
+  padding:18px;
   transition:0.3s;
-  box-shadow:0 6px 18px rgba(0,0,0,0.04);
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
 }
 
 .card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 18px 40px rgba(0,0,0,0.10);
+  transform:translateY(-6px);
 }
 
+/* IMAGES */
 .card img{
   width:100%;
-  height:210px;
+  height:200px;
   object-fit:cover;
-  border-radius:14px;
-  margin-bottom:12px;
+  border-radius:10px;
+  margin-bottom:10px;
 }
 
-/* =========================
-   BUTTONS (REFINED)
-========================= */
+/* BUTTON */
 button{
-  margin-top:12px;
-  padding:12px 16px;
-  border:none;
-  border-radius:10px;
+  margin-top:10px;
+  padding:12px 18px;
   background:#111;
   color:#fff;
-  cursor:pointer;
-  transition:0.2s;
+  border:none;
+  border-radius:8px;
 }
 
-button:hover{
-  background:#333;
-}
-
-/* =========================
-   TESTIMONIALS (PREMIUM LIGHT DARK)
-========================= */
-.testimonials{
-  background:linear-gradient(135deg,#111,#1b1b1b);
+/* TESTIMONIALS */
+.testimonials-section{
+  background:#111;
   color:#fff;
 }
 
-.testimonials .card{
-  background:rgba(255,255,255,0.06);
+.testimonials-section .card{
+  background:rgba(255,255,255,0.08);
   border:1px solid rgba(255,255,255,0.1);
   color:#fff;
 }
 
-/* =========================
-   WHATSAPP FLOAT
-========================= */
-.whatsapp-float{
+/* WHATSAPP */
+.whatsapp-button{
   position:fixed;
-  bottom:22px;
-  right:22px;
+  bottom:20px;
+  right:20px;
   background:#25D366;
-  color:#fff;
-  padding:12px 16px;
+  color:white;
+  padding:12px 18px;
   border-radius:50px;
   text-decoration:none;
-  font-weight:bold;
-  z-index:999;
-}
-
-/* =========================
-   MOBILE FIX
-========================= */
-@media(max-width:768px){
-
-  .hero h1{
-    font-size:34px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  .section{
-    padding:70px 16px;
-  }
-
-  .section h2{
-    font-size:26px;
-  }
 }
