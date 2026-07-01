@@ -215,7 +215,11 @@ button:hover {
 
 .testimonials-section {
   position: relative;
-  background: url("images/testimonials-bg.jpg") center/cover no-repeat;
+  background-image: url("images/testimonials-bg.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: red !important;
   padding: 80px 20px;
   color: #fff;
   overflow: hidden;
