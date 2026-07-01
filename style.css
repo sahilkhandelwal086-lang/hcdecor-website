@@ -215,11 +215,10 @@ button:hover {
 
 .testimonials-section {
   position: relative;
-  background-image: url("images/testimonials-bg.jpg") !important;
+  background-image: url("images/testimonials-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background: red !important;
   padding: 80px 20px;
   color: #fff;
   overflow: hidden;
@@ -228,12 +227,8 @@ button:hover {
 /* Dark blur overlay */
 .testimonials-section .testimonials-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: rgba(0,0,0,0.55);
-  backdrop-filter: blur(4px);
   z-index: 1;
 }
 
