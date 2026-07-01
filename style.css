@@ -244,3 +244,83 @@ button:hover{
     margin-left:10px;
   }
 }
+
+/* =========================
+   TESTIMONIALS (PREMIUM)
+========================= */
+
+.testimonials-section{
+  background: linear-gradient(135deg,#111,#2a2a2a);
+  color:#fff;
+}
+
+.testimonials-section h2{
+  color:#fff;
+}
+
+.testimonial-card{
+  background: rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:16px;
+  padding:20px;
+  backdrop-filter: blur(10px);
+  text-align:left;
+}
+
+.testimonial-card p{
+  margin-bottom:10px;
+  line-height:1.5;
+  font-size:14px;
+}
+
+.testimonial-stars{
+  color:#f5c542;
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+/* =========================
+   BULK CTA BANNER
+========================= */
+
+.bulk-cta{
+  background: #0f0f0f;
+  color:#fff;
+  text-align:center;
+  padding:70px 20px;
+  border-radius:18px;
+  max-width:1100px;
+  margin:80px auto;
+}
+
+.bulk-cta h2{
+  font-size:32px;
+  margin-bottom:12px;
+}
+
+.bulk-cta p{
+  opacity:0.8;
+  margin-bottom:20px;
+}
+
+.bulk-cta button{
+  background:#fff;
+  color:#000;
+  font-weight:600;
+}
+
+.bulk-cta button:hover{
+  background:#ddd;
+}
+
+/* =========================
+   SMALL PREMIUM TOUCHES
+========================= */
+
+.section{
+  scroll-margin-top:90px;
+}
+
+html{
+  scroll-behavior:smooth;
+}
