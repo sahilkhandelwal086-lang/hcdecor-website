@@ -212,3 +212,34 @@ button {
 button:hover {
   background: #333;
 }
+
+.testimonials-section {
+  position: relative;
+  background: url("images/testimonials-bg.jpg") center/cover no-repeat;
+  padding: 80px 20px;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Dark blur overlay */
+.testimonials-section .testimonials-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+/* Keep content above overlay */
+.testimonials-grid {
+  position: relative;
+  z-index: 2;
+}
+
+/* Make cards stand out */
+.testimonials-section .card {
+  background: rgba(255,255,255,0.95);
+}
