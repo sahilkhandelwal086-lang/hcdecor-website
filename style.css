@@ -177,25 +177,19 @@ button:hover{
    TESTIMONIALS (FIXED PREMIUM LOOK)
 ========================= */
 .testimonials-section{
-  position:relative;
-  background:#1a1a1a;
-  color:#fff;
-}
-
-.testimonials-section h2{
-  color:#fff;
+  background:#f7f7f7; /* clean premium gray */
 }
 
 .testimonials-section .card{
-  background:rgba(255,255,255,0.92);
+  background:#fff;
+  border:1px solid #eee;
   color:#111;
-  border:none;
-  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
 }
-
 .testimonials-section .card p:first-child{
   color:#f5b301;
-  margin-bottom:6px;
+  font-size:18px;
+  margin-bottom:8px;
 }
 
 /* =========================
@@ -299,4 +293,32 @@ button:hover{
 
 .cta-products{
   background:#111;
+}
+
+/* SHOW FLOATING BUTTON ONLY ON DESKTOP */
+.whatsapp-button{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:12px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  z-index:999;
+}
+
+/* HIDE IT ON MOBILE */
+@media (max-width:768px){
+  .whatsapp-button{
+    display:none;
+  }
+}
+
+.mobile-cta-bar a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
 }
