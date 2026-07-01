@@ -219,11 +219,11 @@ button:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 20px;
+  padding: 50px 15px;
   overflow: hidden;
 }
 
-/* Overlay */
+/* overlay */
 .testimonials-section::before {
   content: "";
   position: absolute;
@@ -232,38 +232,38 @@ button:hover {
   z-index: 1;
 }
 
-/* Heading */
+/* heading */
 .testimonials-section h2 {
   position: relative;
   z-index: 2;
   color: #fff;
-  margin-bottom: 25px;
   text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
 }
 
-/* Grid - more compact layout */
+/* FORCE compact grid */
 .testimonials-section .grid {
   position: relative;
   z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 
-/* Smaller testimonial cards */
+/* compact cards */
 .testimonials-section .card {
-  width: 100%;
-  max-width: 280px;
-  padding: 15px;
+  width: 220px;
+  padding: 12px;
   border-radius: 10px;
   background: rgba(255,255,255,0.95);
   box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
-/* Star styling */
+/* star */
 .testimonials-section .card p:first-child {
   color: #f5b301;
   font-size: 14px;
-  margin-bottom: 8px;
+  margin: 0 0 6px 0;
 }
